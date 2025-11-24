@@ -15,6 +15,9 @@ Hardware – PCs, Cyclone II , USB flasher
 **Software – Quartus prime**
 
 **Theory**
+The minimised expression of F1= A’B’C’D’+AC’D’+B’CD’+A’BCD+BC’D is F1=B'D' + ABC' + A'BD
+
+The minimised expression of F2=xy’z+x’y’z+w’xy+wx’y+wxy is F2= y′z + yw + yx
 
 **Logic Diagram**
 
@@ -35,16 +38,36 @@ Hardware – PCs, Cyclone II , USB flasher
 
 /* Program to implement the given logic function and to verify its operations in quartus using Verilog programming. 
 
-Developed by: RegisterNumber:*/
+module new2(A,B,C,D,W,X,Y,Z,F1,F2);
+input A,B,C,D,W,X,Y,Z;
+wire x1,x2,x3,x4,x5,x6,x7,x8,x9,x10;
+output F1,F2;
+assign x1=(~A)&(~B)&(~C)&(~D);
+assign x2=(A)&(~C)&(~D);
+assign x3=(~B)&(C)&(~D);
+assign x4=(~A)&(B)&(C)&(D);
+assign x5=(B)&(~C)&(D);
+assign x6=(X)&(~Y)&(Z);
+assign x7=(~X)&(~Y)&(Z);
+assign x8=(~W)&(X)&(Y);
+assign x9=(W)&(~X)&(Y);
+assign x10=(W)&(X)&(Y);
+assign F1=x1|x2|x3|x4|x5;
+assign F2=x6|x7|x8|x9|x10;
+endmodule 
+
+Developed by:S.BHUVANESH
+RegisterNumber:25015685 */
 
 
 **RTL realization**
+<img width="1920" height="1080" alt="Screenshot (36)" src="https://github.com/user-attachments/assets/532fb241-e60c-4a5d-a239-50a44f9fdd2b" />
 
 **Output:**
+<img width="1920" height="1080" alt="Screenshot (37)" src="https://github.com/user-attachments/assets/015671b8-8e40-4109-b920-4a7597fd16d2" />
 
 **RTL**
-
-**Timing Diagram**
+<img width="1920" height="1080" alt="Screenshot (37)" src="https://github.com/user-attachments/assets/37ae979d-5cab-4352-8ee6-95df8662dfde" />
 
 **Result:**
 
