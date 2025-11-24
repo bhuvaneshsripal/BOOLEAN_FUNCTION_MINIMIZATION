@@ -63,11 +63,8 @@ RegisterNumber:25015685 */
 **RTL realization**
 <img width="1920" height="1080" alt="Screenshot (36)" src="https://github.com/user-attachments/assets/532fb241-e60c-4a5d-a239-50a44f9fdd2b" />
 
-**Output:**
+**Output:** / **RTL**
 <img width="1920" height="1080" alt="Screenshot (37)" src="https://github.com/user-attachments/assets/015671b8-8e40-4109-b920-4a7597fd16d2" />
-
-**RTL**
-<img width="1920" height="1080" alt="Screenshot (37)" src="https://github.com/user-attachments/assets/37ae979d-5cab-4352-8ee6-95df8662dfde" />
 
 **Result:**
 
